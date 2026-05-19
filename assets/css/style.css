@@ -8,6 +8,7 @@
     --tertiary-color: #D97F67;
     --quaternary-color: #99BE86;
     --quinary-color: #7A909E;
+    --senary-color:#B5B5B5;
     
 }
 
@@ -63,9 +64,9 @@ h2{
 
 h3 {
     color: var(--secondary-color);
-    font-family: Poppins;
-    font-size: 3rem;
-    font-weight: 300;
+    font-family: Anton;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 h4 {
@@ -90,13 +91,16 @@ p {
     line-height: 2rem;
 }
 
+
+/*Video stylen*/
 video {
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0 0 20px var(--secondary-color);
+  box-shadow: 0 0 1rem var(--secondary-color);
 }
 
 
+/*Buttons stylen*/
 .button {
   background-color:var(--tertiary-color);
   color:var(--secondary-color);
@@ -108,6 +112,7 @@ video {
   transition: background 0.3s ease;
 }
 
+/*Hover Effect für Button*/
 .button:hover {
   background-color:var(--quaternary-color);
 }
@@ -123,8 +128,8 @@ a {
 }
 
 
-/*Hero für alle Seiten*/
-/*Hero für alle Seiten*/
+/*Hero*//*Hero*//*Hero*/
+/*Hero*//*Hero*//*Hero*/
 
 #hero {
   position: relative;
@@ -162,6 +167,10 @@ a {
 
 
 
+
+
+/*Konzept*//*Konzept*//*Konzept*/
+/*Konzept*//*Konzept*//*Konzept*/
 .concept-content{
     display: flex;
     flex-direction: column;
@@ -170,8 +179,11 @@ a {
 }
 
 .concept-content p{
-    text-align: center;
+    text-align:center;
     margin-top: -3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -181,4 +193,82 @@ a {
   margin-bottom: 2rem;
 }
 
+
+
+
+/*Entdecke die Details*/
+/*3 Cards nebeneinander*/
+
+#details {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.details-title {
+  margin-bottom: 4rem;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.detail-box {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-box h3 {
+  margin-bottom: 1rem;
+}
+
+.detail-box p {
+  margin-bottom: 2rem;
+}
+
+/* Farben */
+.reflections {
+  background-color:var(--tertiary-color);
+}
+
+.urban-details {
+  background-color:var(--quaternary-color);
+}
+
+.perspectives {
+  background-color:var(--quinary-color);
+}
+
+/* Buttons */
+.detail-button {
+  background-color:var(--primary-color);
+  color:var(--secondary-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.reflections .detail-button:hover {
+  background-color: var(--quaternary-color);
+}
+
+.urban-details .detail-button:hover {
+  background-color: var(--quinary-color);
+}
+
+.perspectives .detail-button:hover {
+  background-color: var(--tertiary-color);
+}
 
