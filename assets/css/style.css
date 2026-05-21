@@ -49,17 +49,38 @@ header img {
 /*Alle Schriften stylen*/
 h1 {
     color: var(--secondary-color);
-    font-family: Anton;
+    font-family: 'Anton';
     font-size: 10.625rem;
     font-weight: 400;
 }
 
-h2{
-    color: var(--secondary-color);
-    font-family: Anton;
-    font-size: 4rem;
-    font-weight: 400;
+
+/*für h2 die speziell gestyled sind mit einer animation deshalb class vergeben*/
+
+/* Concept-Bereich */
+.section-title {
+  height: 70vh; /* die Bildschirmhöhe aber nicht die ganze */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Titel */
+.title {
+  font-family: 'Anton';
+  font-size: 20vw; /* ganze Breite */
+  color:var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  line-height: 1;
+  transform: scale(0.6); /* Start klein */
+  transition: transform 0.1s ease-out;
+}
+
+
 
 
 h3 {
@@ -171,14 +192,17 @@ a {
 
 /*Konzept*//*Konzept*//*Konzept*/
 /*Konzept*//*Konzept*//*Konzept*/
-.concept-content{
+.content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
+
+      padding: 4rem;
+      position: relative;
+      z-index: 2;
 }
 
-.concept-content p{
+.content p{
     text-align:center;
     margin-top: -3rem;
     margin-right: 7rem;
