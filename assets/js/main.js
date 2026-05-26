@@ -1,3 +1,20 @@
+/*Burger Menü*/
+$(document).ready(function () {
+
+    console.log("")
+
+    $('.menu-icon').click(function () {
+        $(this).parent().toggleClass('active');
+    });
+
+
+});
+
+
+
+
+
+
 /*für den scrollen effect das der titel gross und dann wieder kleiner wird*/
 /*Im JS gamcht das es auf allen Browsern funktionniert*/
 
