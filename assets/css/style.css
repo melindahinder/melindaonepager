@@ -599,7 +599,46 @@ a {
   }
 
 
+  /*Grundeinstellungen*//*Grundeinstellungen*//*Grundeinstellungen*/
+  /*Grundeinstellungen*//*Grundeinstellungen*//*Grundeinstellungen*/
+  /*Grundeinstellungen*//*Grundeinstellungen*//*Grundeinstellungen*/
+
+    /* Hero Titel */
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  /* Section Title (die grossen Titel) */
+  .section-title {
+    font-size: 20vw;
+    letter-spacing: 0.2rem;
+    transform: scale(0.6);
+  }
+
+  /* Allgemeine Texte */
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 
 
+  /* Buttons */
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Links */
+  a {
+    font-size: 1rem;
+  }
 }
+
 
