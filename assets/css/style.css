@@ -502,11 +502,6 @@ a {
   color:var(--quaternary-color);
 }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 1rem;
-}
 
 .social-icons a {
   color:var(--secondary-color);
@@ -724,5 +719,29 @@ a {
     max-width: 90%;            
     
   }
+
+
+
+
+
+/*Kontakt*//*Kontakt*/
+/*Kontakt*//*Kontakt*/
+
+.contact-section {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Linke Seite */
+.contact-left {
+  width: 90%;
+}
+
+
+/* Rechte Seite */
+.contact-right {
+  align-items: flex-start;
+}
+
 
 }
