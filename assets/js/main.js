@@ -16,18 +16,17 @@ window.addEventListener('scroll', () => {
 
     let scale;
 
-    // ABOUT ME soll weniger stark wachsen
-    if (title.classList.contains('about-title')) {
-            scale = 0.6 + progress * 0.2;  // wächst nur minimal
-    } 
-    // alle anderen Titel normal
-    else {
-      scale = 0.6 + progress * 0.6;    // dein normaler Effekt
+    // ABOUT ME & CONTACT: kleiner Effekt
+    if (title.classList.contains('about-title') || title.classList.contains('contact-title')) {
+      scale = 0.6 + progress * 0.2; // Start 0.6 → Ende 0.8
+    } else {
+      scale = 0.6 + progress * 0.6; // Start 0.6 → Ende 1.2
     }
 
     title.style.transform = `scale(${scale})`;
   });
 });
+
 
 
 
