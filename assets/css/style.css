@@ -361,12 +361,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  width: 94vw;        /* gleich wie Galerie */
-  margin: 0 auto;     /* zentriert */
-  padding: 4rem 0;    /* schöner Abstand oben/unten */
+  width: 94vw;        
+  margin: 0 auto;    
+  padding: 4rem 0;    
 }
 
-/* Linke Seite: Titel + Text untereinander */
+/* Linke Seite: Titel und Text untereinander */
 .aboutMe-text{
     display: flex;
     flex-direction: column;
@@ -384,7 +384,7 @@ a {
   width: 40%;
   height: 70%;
   object-fit: cover;
-  border-radius: 1.5px;
+  border-radius: 1.5rem;
 }
 
 
@@ -702,8 +702,27 @@ a {
     grid-row: span 1;
 }
 
+/*About Me*//*About Me*/
+/*About Me*//*About Me*/
+  .aboutMe {
+    flex-direction: column;     
+    text-align: center;          
+  }
 
+  .aboutMe-text {
+    width: 100%;                
+    align-items: center;        
+  }
+
+  .aboutMe-text p {
+    text-align: center;
+  }
+
+  .aboutMe img {
+    width: 100%;                
+    height: auto;              
+    max-width: 90%;            
+    
+  }
 
 }
-
-
