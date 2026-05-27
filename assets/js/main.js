@@ -11,10 +11,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
 /*für den scrollen effect das der titel gross und dann wieder kleiner wird*/
 /*Im JS gamcht das es auf allen Browsern funktionniert*/
 

@@ -1,16 +1,39 @@
 
-/**************Grundeinstellung**************/
-/**************Grundeinstellung**************/
-/**************Grundeinstellung**************/
+/*Grundeinstellung*//*Grundeinstellung*/
+/*Grundeinstellung*//*Grundeinstellung*/
+/*Grundeinstellung*//*Grundeinstellung*/
+
+
+/*Das h1 mei beiden Modus hell bleibt*/
 :root {
+  --h1-color: #ede5e5;
+}
+
+/* Dark Mode (mein Standartdesign) */
+@media (prefers-color-scheme: dark) {
+  :root {
     --primary-color:#07080A;
-    --secondary-color: #FFFFFF;
+    --secondary-color: #ede5e5;
     --tertiary-color: #D97F67;
     --quaternary-color: #99BE86;
     --quinary-color: #7A909E;
     --senary-color:#B5B5B5;
-    
+  }
 }
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color:#ede5e5;  
+    --secondary-color:#07080A; 
+    --tertiary-color:#D97F67;
+    --quaternary-color:#99BE86;
+    --quinary-color:#7A909E;
+    --senary-color:#B5B5B5;
+  }
+}
+
+
 
 body {
     background-color: var(--primary-color);
@@ -36,9 +59,8 @@ header {
 }
 
 /*Logo*/
-header img {
-    width: 4rem;
-    height: 4rem;
+.iconoir-flash {
+  font-size: 4rem;
 }
 
 .menu-icon{
@@ -52,7 +74,7 @@ header img {
 /*Alle Schriften stylen*/
 /*Alle Schriften stylen*/
 h1 {
-    color: var(--secondary-color);
+    color: var(--h1-color);
     font-family: 'Anton';
     font-size: 10.625rem;
     font-weight: 400;
@@ -103,6 +125,14 @@ p {
     line-height: 2rem;
 }
 
+label {
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
 
 /*Video stylen*/
 video {
@@ -133,7 +163,7 @@ video {
 /*Links stylen*/
 a {
     color: var(--secondary-color);
-    font-family: Poppins;
+    font-family: Anton;
     font-size: 1.2rem;
     font-weight: 300;
     text-decoration: none;
@@ -469,7 +499,7 @@ a {
 /*Footer*//*Footer*//*Footer*/
 /*Footer*//*Footer*//*Footer*/
 
-.footer{
+footer{
   background-color: var(--tertiary-color);
 }
 
@@ -540,6 +570,8 @@ a {
 
 @media screen and (max-width: 768px) {
 
+
+  /*Burger Menü*/
   .menu-icon {
     display: block;
     color: var(--secondary-color);
