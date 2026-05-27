@@ -1,6 +1,6 @@
 # Hidden in the Details – Onepager von Melinda Hinder
 
-# Hidden in the Details
+## Hidden in the Details
 
 Dieses Projekt ist eine fotografische und gestalterische Auseinandersetzung mit den kleinen, oft übersehenen Elementen einer Stadt. 
 Im Zentrum steht Amsterdam. Nicht die bekannten Sehenswürdigkeiten, sondern die Details, die im Alltag leicht untergehen: 
